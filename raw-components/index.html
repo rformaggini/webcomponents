@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="./src/components/card-news.component.js" defer ></script>
-    <script src="./src/components/dinamic-title.component.js" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./src/components/card-news.component.js" defer></script>
+    <script src="./src/components/dinamic-title.component.js" defer></script>
     <title>WEB COMPONENTS</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>
-                    By Roddy
-                </span>
-                <a href="#">YD accepts new employees</a>
-                <p>The company expands your business and contract more than thousands new employees</p>
-            </div>
-            <div class="card__right">
-                <img alt="" src="./assets/img.jpeg">
-            </div>
-
-        </div>
+      <card-news
+        autor="Rodney Formaggini"
+        title="MEU TITULO"
+        content="Meu Conteudo"
+        url="#"
+        source="./assets/img.jpeg"
+      ></card-news>
+      <dinamic-title title="TESTE"></dinamic-title>
     </div>
-    <card-news></card-news>
-    <dinamic-title title="TESTE"></dinamic-title>
-</body>
+  </body>
 </html>
